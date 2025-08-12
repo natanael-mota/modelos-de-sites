@@ -1,0 +1,67 @@
+body{
+    overflow-x: hidden;
+}
+#video-backgorund{
+    width: 100vw;
+    height: 100vh;
+    background-color: #555;
+    position: fixed;
+}
+
+#conteudo{
+    position: absolute;
+    width: 100vw;
+}
+
+#cabecalho-principal{
+    color: #fff;
+    height: 40vh;
+}
+#cabecalho-principal h1{
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+#cabecalho-principal p{
+    font-size: 2em;
+}
+
+.card-conteudo{
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    height: 60vh;
+}
+.card-conteudo h2{
+    font-weight: 800;
+    font-size: 2.4em;
+}
+.card-conteudo p{
+    font-size: 1.3em;
+}
+
+.card-conteudo .texto{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 30px 0;
+}
+
+.card-v1{
+    background-color: #EF7B3E;
+}
+.card-v1 h2{
+    color: #121212;
+}
+
+.card-v2{
+    background-color: #121212;
+}
+.card-v2 h2{
+    color: #EF7B3E;
+}
+
+.ver-mais{
+    border-radius: 30px;
+}

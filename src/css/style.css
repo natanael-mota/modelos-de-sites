@@ -1,7 +1,8 @@
-body{
+body {
     overflow-x: hidden;
 }
-#video-backgorund{
+
+#video-backgorund {
     width: 100vw;
     height: 100vh;
     background-color: #555;
@@ -9,109 +10,209 @@ body{
     filter: grayscale(100%);
 }
 
-#video-background video{
+#video-background video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
     object-position: center;
 }
 
-#conteudo{
+#conteudo {
     position: absolute;
     width: 100vw;
 }
 
-#cabecalho-principal{
+#cabecalho-principal {
     color: #fff;
     height: 40vh;
 }
-#cabecalho-principal h1{
+
+#cabecalho-principal h1 {
     font-weight: 800;
     margin-bottom: 30px;
     font-size: 3em;
 }
-#cabecalho-principal p{
+
+#cabecalho-principal p {
     font-size: 2em;
+    transition-delay: 200ms!important;
 }
 
-.card-conteudo{
+.card-conteudo {
     color: #fff;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     overflow: hidden;
     height: 60vh;
 }
-.card-conteudo h2{
+
+.card-conteudo h2 {
     font-weight: 800;
     font-size: 2.4em;
 }
-.card-conteudo p{
+
+.card-conteudo p {
     font-size: 1.3em;
 }
 
-.card-conteudo .texto{
+.card-conteudo .texto {
     display: flex;
     flex-direction: column;
     padding: 100px;
     gap: 30px 0;
 }
 
-.card-conteudo .imagem{
+.card-conteudo .imagem {
     position: relative;
 }
-.card-conteudo .imagem-card{
+
+.card-conteudo .imagem-card {
     border-radius: 30px;
-    box-shadow: 30px 60px 40px rgba(0,0,0,.3);
+    box-shadow: 30px 60px 40px rgba(0, 0, 0, .3);
 }
-.card-v1 .imagem-card{
-    transform: rotate(25deg) translate(0, 20%);
-}
-.card-v2 .imagem-card{
-    transform: rotate(25deg) translate(20%, 18%);
-}
-.card-conteudo .infeite-imagem{
+
+.card-conteudo .infeite-imagem {
     content: "";
     display: block;
     width: 360px;
     height: 500px;
     position: absolute;
     background-color: #fff;
-    transform: rotate(-15deg) scale(130%);
 }
-.card-v1 .infeite-imagem{
+
+.card-v1 .infeite-imagem {
     top: -50px;
     right: 0;
 }
 
-.card-conteudo .icone-card{
+.card-conteudo .icone-card {
     position: absolute;
+    transition-delay: 1600ms!important;
 }
 
-.card-v1 .icone-card{
+.card-v1 .icone-card {
     top: 10%;
     right: 80%;
 }
-.card-v2 .icone-card{
+
+.card-v2 .icone-card {
     top: 72%;
     right: -10%;
 }
 
-.card-v1{
+.card-v1 {
     background-color: #EF7B3E;
 }
-.card-v1 h2{
+
+.card-v1 h2 {
     color: #121212;
 }
 
-.card-v2{
+.card-v2 {
     background-color: #121212;
 }
-.card-v2 h2{
+
+.card-v2 h2 {
     color: #EF7B3E;
 }
 
-.ver-mais{
+.ver-mais {
     border-radius: 30px;
     transition: all 0.7s ease;
     padding: 10px 50px;
+}
+
+.balancar {
+    animation: balanco 4s ease-in-out infinite;
+}
+
+@keyframes balanco {
+    0% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card-conteudo .texto .animado, 
+#cabecalho-principal .animado{
+    opacity: 0;
+    transform: translatey(100px);
+    transition: all 2s;
+}
+
+.card-conteudo .texto .visivel,
+#cabecalho-principal .visivel{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 2s;
+}
+
+.card-v1 .imagem img.animado{
+    opacity: 0;
+    transform: rotate(25deg) translate(0, 40%);
+    transition: all 2s;
+}
+
+.card-v1 .imagem img.visivel{
+    opacity: 1;
+    transform: rotate(25deg) translate(0, 20%);
+    transition: all 2s;
+}
+.card-v1 .imagem div.animado{
+    opacity: 0;
+    transform: rotate(-15deg) scale(130%) translateX(200px);
+    transition: all 2s;
+}
+
+.card-v1 .imagem div.visivel{
+    opacity: 1;
+    transform: rotate(-15deg) scale(130%) translateX(0);
+    transition: all 2s;
+}
+
+
+
+.card-v2 .imagem img.animado{
+    opacity: 0;
+    transform: rotate(25deg) translate(20%, 40%);
+    transition: all 2s;
+}
+
+.card-v2 .imagem img.visivel{
+    opacity: 1;
+    transform: rotate(25deg) translate(20%, 18%);
+    transition: all 2s;
+}
+.card-v2 .imagem div.animado{
+    opacity: 0;
+    transform: rotate(-15deg) scale(130%) translateX(-200px);
+    transition: all 2s;
+}
+
+.card-v2 .imagem div.visivel{
+    opacity: 1;
+    transform: rotate(-15deg) scale(130%) translateX(0);
+    transition: all 2s;
+}
+
+
+#landing-page {
+    animation: entrada-landing 1.6s ease-out;
+}
+
+@keyframes entrada-landing {
+    0% {
+        transform: translatey(60vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

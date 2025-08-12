@@ -6,6 +6,14 @@ body{
     height: 100vh;
     background-color: #555;
     position: fixed;
+    filter: grayscale(100%);
+}
+
+#video-background video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 
 #conteudo{

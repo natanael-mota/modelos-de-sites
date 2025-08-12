@@ -56,6 +56,46 @@ body{
     gap: 30px 0;
 }
 
+.card-conteudo .imagem{
+    position: relative;
+}
+.card-conteudo .imagem-card{
+    border-radius: 30px;
+    box-shadow: 30px 60px 40px rgba(0,0,0,.3);
+}
+.card-v1 .imagem-card{
+    transform: rotate(25deg) translate(0, 20%);
+}
+.card-v2 .imagem-card{
+    transform: rotate(25deg) translate(20%, 18%);
+}
+.card-conteudo .infeite-imagem{
+    content: "";
+    display: block;
+    width: 360px;
+    height: 500px;
+    position: absolute;
+    background-color: #fff;
+    transform: rotate(-15deg) scale(130%);
+}
+.card-v1 .infeite-imagem{
+    top: -50px;
+    right: 0;
+}
+
+.card-conteudo .icone-card{
+    position: absolute;
+}
+
+.card-v1 .icone-card{
+    top: 10%;
+    right: 80%;
+}
+.card-v2 .icone-card{
+    top: 72%;
+    right: -10%;
+}
+
 .card-v1{
     background-color: #EF7B3E;
 }

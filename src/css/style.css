@@ -28,9 +28,12 @@ body {
 }
 
 #cabecalho-principal h1 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 800;
     margin-bottom: 30px;
-    font-size: 3em;
+    font-size: 3.6em;
 }
 
 #cabecalho-principal p {
@@ -47,8 +50,11 @@ body {
 }
 
 .card-conteudo h2 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-weight: 800;
-    font-size: 2.4em;
+    font-size: 3.2em;
 }
 
 .card-conteudo p {

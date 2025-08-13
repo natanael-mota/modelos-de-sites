@@ -1,5 +1,4 @@
 const observador = new IntersectionObserver((infos) => {
-    console.log(infos)
     infos.forEach((info) => {
         if (info.isIntersecting) {
             info.target.classList.add("visivel")

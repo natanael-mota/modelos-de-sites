@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-#video-backgorund {
+#video-background {
     width: 100vw;
     height: 100vh;
     background-color: #555;
@@ -20,11 +20,16 @@ body {
 #conteudo {
     position: absolute;
     width: 100vw;
+    height: calc(100vh * 5);
 }
 
 #cabecalho-principal {
     color: #fff;
-    height: 40vh;
+    padding: 90px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #cabecalho-principal h1 {
@@ -219,6 +224,73 @@ body {
     }
 
     100% {
+        transform: translateY(0);
+    }
+}
+
+.fixar {
+  position: fixed;
+  top: calc(100vh * 0.4);
+  left: 0;
+  right: 0;
+}
+
+#eventos{
+    animation: eventos-scroll 1s linear;
+    animation-timeline: scroll();
+}
+
+@keyframes eventos-scroll {
+    0%, 80% {
+        transform: translatey(101%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#blog{
+    animation: blog-scroll 1s linear;
+    animation-timeline: scroll();
+}
+
+@keyframes blog-scroll {
+    0%, 55% {
+        transform: translatey(101%);
+    }
+
+    75%, 100% {
+        transform: translateY(0);
+    }
+}
+
+#portifolio{
+    animation: portifolio-scroll 1s linear;
+    animation-timeline: scroll();
+}
+
+@keyframes portifolio-scroll {
+    0%, 30% {
+        transform: translatey(101%);
+    }
+
+    50%, 100% {
+        transform: translateY(0);
+    }
+}
+
+#institucional{
+    animation: institucional-scroll 1s linear;
+    animation-timeline: scroll();
+}
+
+@keyframes institucional-scroll {
+    0%, 5% {
+        transform: translatey(101%);
+    }
+
+    25%, 100% {
         transform: translateY(0);
     }
 }

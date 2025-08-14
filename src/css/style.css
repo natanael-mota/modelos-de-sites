@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    background-color: #222;
 }
 
 #video-background {
@@ -340,5 +341,55 @@ body {
         transform: scale(0.2);
         opacity: 0;
         filter: blur(10px);
+    }
+}
+
+@media (max-width: 576px) {
+  
+    #cabecalho-principal {
+        padding: 60px 30px;
+    }
+
+    #cabecalho-principal h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    #cabecalho-principal p {
+        font-size: 1em;
+    }
+    
+    .card-conteudo {
+        height: 65vh;
+    }
+
+    .card-conteudo h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .card-conteudo p {
+        font-size: 1em;
+    }
+
+    .card-conteudo .texto {
+        padding: 60px 30px;
+    }
+
+    .card-conteudo .texto div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-conteudo .imagem{
+        display: none;
+    }
+    
+    .fixar {
+    top: calc(100vh * 0.35);
+    }
+
+    #video-background {
+        display: none;
     }
 }

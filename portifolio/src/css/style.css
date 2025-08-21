@@ -74,6 +74,7 @@
 #slide-titulo{
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease-out;
 }
 .item-titulo{
     background: linear-gradient(to right, #fff 50%, #0D242D 50%);

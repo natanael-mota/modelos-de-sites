@@ -21,7 +21,7 @@
             <img src="src/img/logo.png" class="img-fluid" Alt="Logo">
         </div>
 
-        <a href="#" class="btn" id="botao-menu"><i class="bi bi-list"></i></a>
+        <button type="button" class="btn" id="botao-menu"><i class="bi bi-list"></i></button>
 
         <div id="container-miniaturas">
             <div id="min1" class="miniatura-home mini-atual" style="background-image: url('src/posts/casa-horizonte/fachada.png')" data-scroll-ordem="1"></div>
@@ -39,6 +39,41 @@
 
     </main>
 
+    <div id="popup-menu">
+        <div id="container-menu">
+            <button type="button" class="btn-close" id="fechar-menu" aria-label="Close"></button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row align-items-center" id="col-menu">
+                            <div>
+                            <div class="col-12">
+                                <img src="src/img/logo.png" class="img-fluid" id="logo-menu" Alt="Logo">
+                            </div>
+                            <div class="col-12">
+                                <nav id="menu">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Projetos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Sobre mim</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Contatos</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 align-items-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="background" id="background">
         <div class="bg-sessao" style="background-image: url('src/posts/casa-horizonte/fachada.png')"></div>
         <div class="bg-sessao" style="background-image: url('src/posts/casa-viva/fachada.png')"></div>
@@ -50,5 +85,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="src/script/animacao.js"></script>
     <script src="src/script/miniaturas.js"></script>
+    <script src="src/script/menu.js"></script>
 </body>
 </html>

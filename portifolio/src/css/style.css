@@ -55,14 +55,6 @@
     left: 30px;
     bottom: 30px;
 }
-#container-titulo{
-    height: 86vh;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    padding-bottom: 30px;
-    padding-right: 0;
-}
 #titulo{
     width: 500px;
     height: 90px;

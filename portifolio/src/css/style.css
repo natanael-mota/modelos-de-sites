@@ -38,6 +38,7 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: all 500ms ease-out;
+    cursor: pointer;
 }
 .miniatura-home:hover{
     transform: translateX(15px);

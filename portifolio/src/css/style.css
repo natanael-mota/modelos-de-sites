@@ -163,3 +163,17 @@
 .miniatura-menu:hover img{
     transform: scale(110%);
 }
+#sobre{
+    width: 100%;
+    height: 100vh;
+    background-color: #070;
+}
+#contatos{
+    width: 100%;
+    height: 100vh;
+    background-color: #700;
+}
+.trans{
+    transform: translateY(-100vh);
+    transition: all 500ms ease-out;
+}

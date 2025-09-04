@@ -98,7 +98,7 @@
     margin-left: 40px;
 }
 #popup-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -106,6 +106,7 @@
     transition: all 0.3s ease-out;
     transform: scale(100%, 0%);
     opacity: 0;
+    overflow: hidden;
 }
 .menu-aberto{
     transform: scale(100%, 100%)!important;

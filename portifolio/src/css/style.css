@@ -228,3 +228,47 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.post{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.post .cabecalho-post{
+    margin-top: 60vh;
+    padding: 50px;
+}
+.post .cabecalho-post h1{ 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+.post .conteudo-post{
+    background-color: rgba(255,255,255,.8);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    width: 100%;
+}
+.post .conteudo-post p{
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 70px;
+}
+.post .imagem-post{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.post .rodape{
+    background: linear-gradient(to top, rgba(13,36,45,.9) 50%, rgba(13,36,45,0) 100%);
+}
+.post .rodape .col-12{
+    padding: 100px;
+    justify-items: center;
+    color: #fff;
+}

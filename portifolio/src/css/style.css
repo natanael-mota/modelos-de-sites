@@ -237,7 +237,7 @@ p{
 
 .post .cabecalho-post{
     margin-top: 60vh;
-    padding: 50px;
+    padding: 50px 120px;
 }
 .post .cabecalho-post h1{ 
     font-family: "Oswald", sans-serif;
@@ -250,7 +250,7 @@ p{
 .post .conteudo-post{
     background-color: rgba(255,255,255,.8);
     backdrop-filter: blur(10px);
-    padding: 50px;
+    padding: 120px;
     width: 100%;
 }
 .post .conteudo-post p{
@@ -258,7 +258,7 @@ p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 .post .imagem-post{
     width: 100%;

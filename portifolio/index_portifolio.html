@@ -14,6 +14,11 @@
     <link href="src/css/style.css" rel="stylesheet">
 </head>
 <body>
+    
+    <div id="transicao">
+        <div id="trans-topo"></div>
+        <div id="trans-baixo"></div>
+    </div>
 
     <main id="conteudo">
         
@@ -31,9 +36,9 @@
 
         <div id="titulo">
             <div id="slide-titulo">
-                <a href="#" class="btn item-titulo"><span class="texto-titulo">Casa Horizonte</span><i class="bi bi-chevron-right"></i></a>
-                <a href="#" class="btn item-titulo"><span class="texto-titulo">Casa Viva</span><i class="bi bi-chevron-right"></i></a>
-                <a href="#" class="btn item-titulo"><span class="texto-titulo">Força e Forma</span><i class="bi bi-chevron-right"></i></a>
+                <a href="#" class="btn item-titulo link"><span class="texto-titulo">Casa Horizonte</span><i class="bi bi-chevron-right"></i></a>
+                <a href="#" class="btn item-titulo link"><span class="texto-titulo">Casa Viva</span><i class="bi bi-chevron-right"></i></a>
+                <a href="#" class="btn item-titulo link"><span class="texto-titulo">Força e Forma</span><i class="bi bi-chevron-right"></i></a>
             </div>
         </div>
 
@@ -48,7 +53,7 @@
                         <div class="row align-items-center" id="col-menu">
                             <div>
                             <div class="col-12">
-                                <a href="index_portifolio.html"><img src="src/img/logo.png" class="img-fluid" id="logo-menu" Alt="Logo"></a>
+                                <a href="index_portifolio.html" class="link"><img src="src/img/logo.png" class="img-fluid" id="logo-menu" Alt="Logo"></a>
                             </div>
                             <div class="col-12">
                                 <nav id="menu">
@@ -71,47 +76,47 @@
                     <div class="col-8 trans" id="container-conteudo-menu">
                         <div id="miniaturas-menu" class="container-conteudo-menu">
                             <div class="miniatura-menu">
-                                <a href="src/posts/casa-horizonte/casa-horizonte.html">
+                                <a href="src/posts/casa-horizonte/casa-horizonte.html" class="link">
                                     <img src="src/posts/casa-horizonte/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/casa-viva/casa-viva.html">
+                                <a href="src/posts/casa-viva/casa-viva.html" class="link">
                                     <img src="src/posts/casa-viva/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/forca-forma/forca-forma.html">
+                                <a href="src/posts/forca-forma/forca-forma.html" class="link">
                                     <img src="src/posts/forca-forma/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/forca-forma/forca-forma.html">
+                                <a href="src/posts/forca-forma/forca-forma.html" class="link">
                                     <img src="src/posts/forca-forma/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/casa-horizonte/casa-horizonte.html">
+                                <a href="src/posts/casa-horizonte/casa-horizonte.html" class="link">
                                     <img src="src/posts/casa-horizonte/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/casa-viva/casa-viva.html">
+                                <a href="src/posts/casa-viva/casa-viva.html" class="link">
                                     <img src="src/posts/casa-viva/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/casa-viva/casa-viva.html">
+                                <a href="src/posts/casa-viva/casa-viva.html" class="link">
                                     <img src="src/posts/casa-viva/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/forca-forma/forca-forma.html">
+                                <a href="src/posts/forca-forma/forca-forma.html" class="link">
                                     <img src="src/posts/forca-forma/fachada.png" alt="">
                                 </a>
                             </div>
                             <div class="miniatura-menu">
-                                <a href="src/posts/casa-horizonte/casa-horizonte.html">
+                                <a href="src/posts/casa-horizonte/casa-horizonte.html" class="link">
                                     <img src="src/posts/casa-horizonte/fachada.png" alt="">
                                 </a>
                             </div>
@@ -170,7 +175,7 @@
                                 </div>
                                 <p class="ou">OU</p>
                                 <div id="whatsapp">
-                                    <a href="" class="btn btn-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                                    <a href="" target="_blank" class="btn btn-whatsapp"><i class="bi bi-whatsapp"></i> Whatsapp</a>
                                 </div>
                             </div>
                         </div>
@@ -185,6 +190,7 @@
         <div class="bg-sessao" style="background-image: url('src/posts/casa-viva/fachada.png')"></div>
         <div id="box" class="bg-sessao" style="background-image: url('src/posts/forca-forma/fachada.png')"></div>
     </div>
+
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -192,5 +198,6 @@
     <script src="src/script/animacao.js"></script>
     <script src="src/script/miniaturas.js"></script>
     <script src="src/script/menu.js"></script>
+    <script src="src/script/transicao.js"></script>
 </body>
 </html>

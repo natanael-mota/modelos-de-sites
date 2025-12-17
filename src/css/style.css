@@ -6,7 +6,7 @@ body {
 #video-background {
     width: 100vw;
     height: 100vh;
-    background-color: #555;
+    background-color: #000;
     position: fixed;
     filter: grayscale(100%);
 }
@@ -16,6 +16,7 @@ body {
     height: 100vh;
     object-fit: cover;
     object-position: center;
+    opacity: 0.3;
 }
 
 #conteudo {
